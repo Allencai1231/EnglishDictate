@@ -2,9 +2,8 @@ import java.io.*;
 import java.util.*;
 /*
  * 使用方法：将单词本放入text中，每个单词占一行，每个单词用空格隔开
- * 运行bin的App.class文件
  * 输入单词本名称时，不需要输入.txt后缀
- * 具体操作: cd bin
+ * cd bin
  * java Gui
  */
 
