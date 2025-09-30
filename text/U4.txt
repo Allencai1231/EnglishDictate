@@ -15,7 +15,7 @@ cheek n.面颊;脸颊
 favour vt.较喜欢;选择;有利于n.帮助;恩惠;赞同
 bow vi.鞠躬;弯腰;点头vt.低(头)n.鞠躬;蝴蝶结
 waist n.腰;腰部
-make inferences 推理;推断
+make-inferences 推理;推断
 break-down 分解;推断;打破
 barrier n.障碍;隔阂;障碍物
 fake adj.假的;伪造的;冒充的n.赝品;冒充者
