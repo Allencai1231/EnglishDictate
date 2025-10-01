@@ -1,11 +1,6 @@
 import java.io.*;
 import java.util.*;
-/*
- * 使用方法：将单词本放入text中，每个单词占一行，每个单词用空格隔开
- * 输入单词本名称时，不需要输入.txt后缀
- * cd bin
- * java Gui
- */
+
 
 public class App {
     public static void main(String[] args) {
@@ -29,7 +24,7 @@ class Words{
         try(BufferedReader br = new BufferedReader(new FileReader(path))){
             String line;
             while((line = br.readLine()) != null){
-                String[] arr = line.split("\\s+");
+                String[] arr = line.split("\\s*:\\s*");
                 list.add(arr);
             }
         }catch(IOException e){
@@ -84,6 +79,7 @@ class Words{
         for(int i = 0; i < randomlist.size(); i++){
             int index = randomlist.get(i);
             String[] word = words.get(index);
+            System.out.println("第"+(i+1)+"/"+randomlist.size()+"个单词");
             System.out.println("请输入对应的单词，其释义为 "+ word[1]);
             String input = sc.nextLine().trim();
             if(input.equals("exit")){
@@ -141,8 +137,8 @@ class WordsCollection{
             }
         }
         else {
-            String fileName = ans + ".txt";
-            ArrayList<String[]> words = Words.readToFile(fileName);
+            String filename = ans + ".txt";
+            ArrayList<String[]> words = Words.readToFile(filename);
             ArrayList<Integer> randomlist = Words.randomListGenerate(words.size());
             Words w = new Words(words, randomlist);
             addWords(w);

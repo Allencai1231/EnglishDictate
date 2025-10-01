@@ -109,13 +109,13 @@ public class Gui extends JFrame {
         JButton confirmButton = new JButton("确定");
         confirmButton.setFont(new Font("微软雅黑", Font.PLAIN, 14));
         confirmButton.addActionListener(new ActionListener() {
-            @Override
+            @Override 
             public void actionPerformed(ActionEvent e) {
                 String selectedFile = (String) fileComboBox.getSelectedItem();
                 if (selectedFile != null) {
                     // 使用现有逻辑加载单词
                     wordsCollection = new WordsCollection();
-                    ArrayList<String[]> wordsData = Words.readToFile(selectedFile + ".txt");
+                    ArrayList<String[]> wordsData = Words.readToFile(selectedFile+".txt");
                     randomList = Words.randomListGenerate(wordsData.size());
                     currentWords = new Words(wordsData, randomList);
                     
