@@ -3,7 +3,7 @@ bay : n. (海或湖的) 湾
 craft : n. 手艺; 工艺; 技艺
 antique : n. 古物; 古董 adj. 古老的; 古董的
 pleasant : adj. 令人愉快的; 友好的
-arise : vi. (arose, arisen) 起身; 出现; 自……引起
+arise : vi.起身; 出现; 自……引起
 massive : adj. 巨大的; 非常严重的
 literally : adv. 字面上; 真正地
 breath : n. 呼吸的空气
@@ -19,8 +19,8 @@ grizzly bear : n. 灰熊
 drill : vi. & vt. 钻(孔); 打(眼) n. 钻(头); 训练; 练习
 freezing : adj. 极冷的; 冰冻的
 freezing cold : 极冷的; 凛冽的
-freeze : vi. & vt. (froze, frozen) 结冰; (使) 冻住
-mall : n. (also shopping mall) 购物商场; 购物广场
+freeze : vi. & vt.结冰; (使) 冻住
+mall : n. 购物商场; 购物广场
 prairie : n. 北美大草原
 anticipate : vt. 预料; 预见; 期望
 bunch : n. 束; 串; 捆
@@ -30,8 +30,8 @@ frost : n. 霜; 严寒天气; 霜冻 vt. 使蒙上霜 vi. 结霜
 curtain : n. 窗帘
 border : n. 国界; 边界 (地区)
 duration : n. 持续时间; 期间
-harbour : (especially US harbor) n. (海) 港; 港口
-enrol : (especially US enroll) vi. & vt. (使) 加入; 注册; 登记
+harbour : n. (海) 港; 港口
+enrol :  vi. & vt. (使) 加入; 注册; 登记
 quarry : n. 采石场
 idiom : n. 习语; 成语
 contrary : adj. 相反的; 相对立的 n. 相反的事实 (或事物)
@@ -46,7 +46,7 @@ misty : adj. 多雾的; 模糊的
 mist : n. 薄雾; 水汽
 steel : n. 钢; 钢铁工业
 dusk : n. 黄昏; 傍晚
-advertisement : (informal ad) n. 广告; 启事
+advertisement : n. 广告; 启事
 accent : n. 口音
 photographer : n. 摄影师; 拍照者
 owe : vt. 欠 (账、债、情等)
