@@ -1,4 +1,6 @@
 use std::{collections::HashMap, fs, io, process};
+use std::time::{Instant,Duration};
+use std::thread;
 
 fn main() {
     let stdin = io::stdin();
@@ -26,6 +28,7 @@ fn main() {
 }
 
 fn run_word_book(name: &str) {
+    let start = Instant::now();
     let content = fs::read_to_string(format!("./text/{}", name)).unwrap_or_else(|e| { eprintln!("无法读取文件: {}", e); String::new() });
     let initial_words: Vec<_> = content.lines().filter_map(|l| l.split_once(':'))
         .map(|(k, v)| (k.trim().to_string(), v.trim().to_string())).collect();
@@ -77,6 +80,20 @@ fn run_word_book(name: &str) {
         for (k, v) in report {
             println!("单词: {:<15} 错误次数: {:<3} 释义: {}", k, v, checklist.get(k).unwrap());
         }
+        let duration = start.elapsed();
+        let formatted_time = changetime(duration.as_secs());
+        println!();
+        println!("耗时：{:?}",formatted_time);
+        thread::sleep(Duration::from_secs(2));
         println!("---------------------------");
+        
+        
     }
+}
+
+fn changetime(total_secs:u64) -> String {
+    let minutes = total_secs / 60;
+    let seconds = total_secs % 60;
+    format!("{:02}:{:02}", minutes, seconds)
+
 }
