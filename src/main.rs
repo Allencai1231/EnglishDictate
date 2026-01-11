@@ -69,7 +69,21 @@ fn run_word_book(name: &str) {
                 }
             }
         }
-        if missed.is_empty() { break } else { cur_set = missed }
+        if missed.is_empty() && global_errors.is_empty(){ 
+            let duration = start.elapsed();
+            let formatted_time = changetime(duration.as_secs());
+            println!();
+            println!("耗时：{:?}",formatted_time);
+            thread::sleep(Duration::from_secs(2));
+            println!("---------------------------");
+            break;
+        } 
+        else if missed.is_empty() {
+            break;
+        }
+        else { 
+            cur_set = missed; 
+        }
     }
 
     if !global_errors.is_empty() {
